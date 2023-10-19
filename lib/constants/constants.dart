@@ -8,7 +8,4 @@ class Constants {
   static const kBodyTextColor = Color(0xFFC2C2C2);
   static const ksubtitleTextColor = Color(0xFFA2A2A2);
   static const kbaseSpacing = 4;
-  int remSpacing(multiple) {
-    return multiple * kbaseSpacing;
-  }
 }

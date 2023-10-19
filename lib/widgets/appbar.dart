@@ -7,7 +7,7 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 240,
+      height: double.infinity,
       decoration: BoxDecoration(
         color: Constants.kSecondaryColor,
         boxShadow: [
@@ -22,8 +22,10 @@ class CustomAppBar extends StatelessWidget {
         ),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
+          const SizedBox(
+            height: 40,
+          ),
           Container(
             decoration: BoxDecoration(boxShadow: [
               BoxShadow(
@@ -41,7 +43,30 @@ class CustomAppBar extends StatelessWidget {
                 backgroundColor: Constants.kPrimaryColor,
               ),
             ),
-          )
+          ),
+          const SizedBox(
+            height: Constants.kbaseSpacing * 5,
+          ),
+          Text(
+            'Hi/Welcome Back,\n[name]',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Constants.kBodyTextColor,
+              shadows: [
+                Shadow(
+                    offset: const Offset(2, 5),
+                    blurRadius: 4,
+                    color: Colors.black.withOpacity(0.5))
+              ],
+              fontSize: 32,
+              fontWeight: FontWeight.w700,
+              height: 0,
+              letterSpacing: 1.60,
+            ),
+          ),
+          const SizedBox(
+            height: 40,
+          ),
         ],
       ),
     );
