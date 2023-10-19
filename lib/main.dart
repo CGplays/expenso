@@ -1,3 +1,5 @@
+import 'package:expenso/constants/constants.dart';
+import 'package:expenso/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        scaffoldBackgroundColor: Constants.kPrimaryColor,
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: null,
+      home: const HomeScreen(),
     );
   }
 }

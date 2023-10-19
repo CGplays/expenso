@@ -1,3 +1,4 @@
+import 'package:expenso/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -5,6 +6,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+        appBar: PreferredSize(
+      preferredSize: Size(double.infinity, 240),
+      child: CustomAppBar(),
+    ));
   }
 }
