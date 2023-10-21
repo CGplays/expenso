@@ -10,6 +10,8 @@ class HomeScreen extends StatelessWidget {
         appBar: PreferredSize(
       preferredSize: Size(double.infinity, 240),
       child: CustomAppBar(),
-    ));
+    ),
+body: Column(),
+);
   }
 }
