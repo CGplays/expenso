@@ -6,8 +6,10 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: double.infinity,
+    return AnimatedContainer(
+      duration: const Duration(seconds: 3),
+      curve: Curves.easeInOutCubic,
+      height: 260,
       decoration: BoxDecoration(
         color: Constants.kSecondaryColor,
         boxShadow: [
@@ -22,10 +24,8 @@ class CustomAppBar extends StatelessWidget {
         ),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          const SizedBox(
-            height: 40,
-          ),
           Container(
             decoration: BoxDecoration(boxShadow: [
               BoxShadow(
@@ -36,10 +36,10 @@ class CustomAppBar extends StatelessWidget {
               )
             ], borderRadius: BorderRadius.circular(50)),
             child: const CircleAvatar(
-              radius: 50,
-              backgroundColor: Constants.kTeriaryColor,
+              radius: 45,
+              backgroundColor: Constants.kTertiaryColor,
               child: CircleAvatar(
-                radius: 45,
+                radius: 40,
                 backgroundColor: Constants.kPrimaryColor,
               ),
             ),
@@ -51,14 +51,14 @@ class CustomAppBar extends StatelessWidget {
             'Hi/Welcome Back,\n[name]',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Constants.kBodyTextColor,
+              color: Constants.kHeadingTextColor,
               shadows: [
                 Shadow(
                     offset: const Offset(2, 5),
                     blurRadius: 4,
                     color: Colors.black.withOpacity(0.5))
               ],
-              fontSize: 32,
+              fontSize: 30,
               fontWeight: FontWeight.w700,
               height: 0,
               letterSpacing: 1.60,
