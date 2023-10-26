@@ -1,6 +1,7 @@
 import 'package:expenso/constants/constants.dart';
 import 'package:expenso/widgets/appbar.dart';
 import 'package:expenso/widgets/home_daily_expense.dart';
+import 'package:expenso/widgets/recent_expenses_home.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -33,6 +34,10 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 40),
             const HomeDailyExpense(),
+            const SizedBox(
+              height: 40,
+            ),
+            const RecentExpensesHomes(),
           ],
         ),
       ),
