@@ -25,22 +25,14 @@ class HomeDailyExpense extends StatelessWidget {
             SizedBox(
               width: 12,
             ),
-            CircleAvatar(
-              radius: 16,
-              backgroundColor: Constants.kTertiaryColor,
-              child: CircleAvatar(
-                radius: 14,
-                backgroundColor: Constants.kSecondaryColor,
-                child: Icon(
-                  FontAwesomeIcons.circleChevronDown,
-                  color: Constants.kTertiaryColor,
-                ),
-              ),
+            Icon(
+              FontAwesomeIcons.circleChevronDown,
+              color: Constants.kTertiaryColor,
             )
           ],
         ),
         SizedBox(
-          height: 12,
+          height: 16,
         ),
         Padding(
           padding: EdgeInsets.only(left: 16),

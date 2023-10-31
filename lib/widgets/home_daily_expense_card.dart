@@ -38,7 +38,7 @@ class ExpenseCardDaily extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
@@ -51,6 +51,7 @@ class ExpenseCardDaily extends StatelessWidget {
                               letterSpacing: 0.42,
                             ),
                           ),
+                          SizedBox(height: 4),
                           Text(
                             "Rs. 20",
                             style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:expenso/constants/constants.dart';
+import 'package:expenso/widgets/recent_expenses_card.dart';
 import 'package:flutter/material.dart';
 
 class RecentExpensesHomes extends StatelessWidget {
@@ -39,11 +40,10 @@ class RecentExpensesHomes extends StatelessWidget {
             )
           ],
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: 16),
         const Padding(
           padding: EdgeInsets.only(left: 16),
-          child: null,
-          //TODO: add the recent expenses card
+          child: HomeRecentCard(),
         ),
       ],
     );
