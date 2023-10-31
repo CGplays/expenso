@@ -1,5 +1,5 @@
 import 'package:expenso/constants/constants.dart';
-import 'package:expenso/screens/home_screen.dart';
+import 'package:expenso/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,12 +16,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+            centerTitle: true,
+            color: Constants.kPrimaryColor,
+            titleTextStyle: TextStyle(
+              fontSize: 25,
+              color: Constants.kHeadingTextColor,
+              fontWeight: FontWeight.bold,
+            )),
         textTheme: GoogleFonts.robotoCondensedTextTheme(),
         scaffoldBackgroundColor: Constants.kPrimaryColor,
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }
