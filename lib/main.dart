@@ -1,5 +1,5 @@
 import 'package:expenso/constants/constants.dart';
-import 'package:expenso/screens/login_screen.dart';
+import 'package:expenso/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }
