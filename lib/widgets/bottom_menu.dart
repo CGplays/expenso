@@ -16,26 +16,69 @@ class _BottomMenuState extends State<BottomMenu> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: AnimatedContainer(
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           color: Constants.kSecondaryColor,
           borderRadius: BorderRadius.circular(15),
         ),
         height: 50,
-        width: !isExtended ? 50 : double.maxFinite,
-        duration: const Duration(seconds: 2),
+        width: !isExtended ? 50 : MediaQuery.of(context).size.width - 40,
+        duration: const Duration(milliseconds: 1500),
         curve: Curves.easeInOutCubic,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Expanded(
+          // clipBehavior: Clip.hardEdge,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              // if (isExtended)
               IconButton(
-                onPressed: () => isExtended = !isExtended,
+                onPressed: () => setState(() {
+                  isExtended = !isExtended;
+                }),
+                icon: const Icon(
+                  FontAwesomeIcons.dollarSign,
+                  color: Constants.kTertiaryColor,
+                ),
+              ),
+              // if (isExtended)
+              IconButton(
+                onPressed: () => setState(() {
+                  isExtended = !isExtended;
+                }),
+                icon: const Icon(
+                  FontAwesomeIcons.chartBar,
+                  color: Constants.kTertiaryColor,
+                ),
+              ),
+              IconButton(
+                onPressed: () => setState(() {
+                  isExtended = !isExtended;
+                }),
                 icon: const Icon(
                   FontAwesomeIcons.plus,
                   color: Constants.kTertiaryColor,
                 ),
-              )
+              ),
+              // if (isExtended)
+              IconButton(
+                onPressed: () => setState(() {
+                  isExtended = !isExtended;
+                }),
+                icon: const Icon(
+                  FontAwesomeIcons.clockRotateLeft,
+                  color: Constants.kTertiaryColor,
+                ),
+              ),
+              // if (isExtended)
+              IconButton(
+                onPressed: () => setState(() {
+                  isExtended = !isExtended;
+                }),
+                icon: const Icon(
+                  FontAwesomeIcons.gear,
+                  color: Constants.kTertiaryColor,
+                ),
+              ),
             ],
           ),
         ),
