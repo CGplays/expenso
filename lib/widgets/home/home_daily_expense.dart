@@ -1,5 +1,5 @@
 import 'package:expenso/constants/constants.dart';
-import 'package:expenso/widgets/home_daily_expense_card.dart';
+import 'package:expenso/widgets/home/home_daily_expense_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

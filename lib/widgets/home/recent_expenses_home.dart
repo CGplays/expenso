@@ -1,5 +1,5 @@
 import 'package:expenso/constants/constants.dart';
-import 'package:expenso/widgets/recent_expenses_card.dart';
+import 'package:expenso/widgets/home/recent_expenses_card.dart';
 import 'package:flutter/material.dart';
 
 class RecentExpensesHomes extends StatelessWidget {

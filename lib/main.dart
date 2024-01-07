@@ -1,4 +1,5 @@
 import 'package:expenso/constants/constants.dart';
+import 'package:expenso/screens/add_expense.dart';
 import 'package:expenso/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
+            foregroundColor: Constants.kHeadingTextColor,
             centerTitle: true,
             color: Constants.kPrimaryColor,
             titleTextStyle: TextStyle(
@@ -30,6 +32,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomeScreen(),
+      routes: {
+        AddItem.routeName: (ctx) => const AddItem(),
+      },
     );
   }
 }

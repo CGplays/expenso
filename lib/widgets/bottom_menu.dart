@@ -36,6 +36,7 @@ class _BottomMenuState extends State<BottomMenu> {
                   isExtended = !isExtended;
                 }),
                 icon: const Icon(
+                  //? idk
                   FontAwesomeIcons.dollarSign,
                   color: Constants.kTertiaryColor,
                 ),
@@ -46,6 +47,7 @@ class _BottomMenuState extends State<BottomMenu> {
                   isExtended = !isExtended;
                 }),
                 icon: const Icon(
+                  //? Statistics
                   FontAwesomeIcons.chartBar,
                   color: Constants.kTertiaryColor,
                 ),
@@ -55,6 +57,7 @@ class _BottomMenuState extends State<BottomMenu> {
                   isExtended = !isExtended;
                 }),
                 icon: const Icon(
+                  //? Add
                   FontAwesomeIcons.plus,
                   color: Constants.kTertiaryColor,
                 ),
@@ -65,6 +68,7 @@ class _BottomMenuState extends State<BottomMenu> {
                   isExtended = !isExtended;
                 }),
                 icon: const Icon(
+                  //? History
                   FontAwesomeIcons.clockRotateLeft,
                   color: Constants.kTertiaryColor,
                 ),
@@ -75,6 +79,7 @@ class _BottomMenuState extends State<BottomMenu> {
                   isExtended = !isExtended;
                 }),
                 icon: const Icon(
+                  //? Settings
                   FontAwesomeIcons.gear,
                   color: Constants.kTertiaryColor,
                 ),
